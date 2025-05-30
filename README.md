@@ -14,6 +14,13 @@ This app allows users to add, complete, and filter tasks, as well as toggle betw
 
 ---
 
+## Live Demo
+
+Check out the live version of the app here:  
+[https://todo-one-amber-50.vercel.app/](https://todo-one-amber-50.vercel.app/)
+
+---
+
 ## Getting Started
 
 Follow these steps to run the project locally.
