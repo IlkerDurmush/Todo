@@ -1,0 +1,166 @@
+/* App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.app {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.app.dark {
+  background-color: #121212;
+  color: #ddd;
+}
+
+.app.dark button {
+  background-color: #333;
+  color: #ddd;
+  border: 1px solid #555;
+}
+
+.app.dark button:hover {
+  background-color: #444;
+  border-color: #777;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 0.75rem;
+  width: calc(100% - 110px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline-offset: 2px;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #ececec;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Filter Buttons Styling */
+
+.filter-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  flex-wrap: nowrap;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  background-color: #28a745; /* приятен зелен */
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 128, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.add-button:hover {
+  background-color: #218838;
+  border-color: #19692c;
+  box-shadow: 0 4px 15px rgba(33, 135, 56, 0.6);
+}
+
+.filter-buttons button {
+  flex-grow: 1;
+  max-width: 120px;
+  padding: 0.6rem 0;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.filter-buttons button:hover {
+  background-color: #d6e0ff;
+  color: #0047b3;
+  border-color: #0047b3;
+  box-shadow: 0 4px 15px rgba(0, 71, 179, 0.4);
+}
+
+.filter-buttons button.active {
+  background-color: #0047b3;
+  color: white;
+  border-color: #002a6b;
+  box-shadow: 0 6px 20px rgba(0, 42, 107, 0.7);
+}
