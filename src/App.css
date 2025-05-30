@@ -164,3 +164,49 @@ li.completed {
   border-color: #002a6b;
   box-shadow: 0 6px 20px rgba(0, 42, 107, 0.7);
 }
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-item:hover {
+  background-color: #e6ffe6; /* light green */
+}
+
+.todo-item.completed:hover {
+  background-color: #ffe6e6; /* light red */
+}
+
+.todo-action-label {
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.todo-item:hover .todo-action-label {
+  opacity: 1;
+}
+
+.todo-action-label.complete {
+  color: green;
+}
+
+.todo-action-label.undo {
+  color: red;
+}
